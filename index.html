@@ -1,1 +1,210 @@
-<h1>Testing from scratch</h1>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>test-page</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="menu.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400i,700" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header class="page-header"></header>
+
+      <header class="upper bar">
+        <div class="element">
+          <h1>Sketchbook</h1>
+        </div>
+
+        <div class="element">
+          <h1>Menu</h1>
+          <div class="hidden menu">
+            <ul>
+              <li>contact</li>
+
+              <li>archive</li>
+
+              <li>search</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!--header class="lower bar">
+        <div class="element">
+          <h1>Info</h1>
+        </div>
+
+        <div class="element">
+          <h1>Next Page</h1>
+        </div>
+      </header-->
+
+      <main class="wrapper">
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+
+        <div class="slide">
+          <figure>
+
+          </figure>
+          <figcaption>Some Caption</figcaption>
+        </div>
+      </main>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+      $( document ).ready(function() {
+
+        console.log( "jquery ready!" );
+
+        $( ".element" ).has( ".hidden" ).click(function() {
+
+            $( ".menu" ).toggleClass( "hidden" );
+
+            $( "h1", this  ).toggleClass( "bold" );
+
+            //console.log( content + " was clicked!"
+
+          });
+
+
+
+        /*$( ".element" ).click(function() {
+
+            var content = $( this ).html();
+
+            console.log( content + " was clicked!" );
+
+        });*/
+
+      });
+
+    </script>
+
+    <!--script type="text/javascript" src="slider-script.js"></script-->
+
+  </body>
+
+</html>
+
