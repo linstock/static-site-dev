@@ -8,78 +8,44 @@ body {
   margin: 0; }
 
 html, h1, li {
-  font-family: 'Old Standard TT', serif;
+  font-family: 'Archivo Narrow', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5; }
 
 h1 {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  margin-top: 0; }
   h1:hover {
     cursor: pointer; }
 
 li:hover {
   cursor: pointer; }
 
-.bar {
+.upper {
+  height: 300px;
   display: flex;
-  flex-flow: row nowrap; }
+  justify-content: center;
+  align-items: center; }
 
-.element {
-  padding-left: 0.25rem;
-  width: 50%; }
-  .element h1:hover {
-    font-weight: bold; }
-
-.content {
-  width: 900px;
-  height: 900px; }
-
-.lower {
-  margin-bottom: 9.380px; }
-
-.hidden {
+.menu {
   display: none; }
 
-ul {
-  padding-left: 0; }
-  ul li {
-    list-style-type: none;
-    margin: 9.38px 0; }
-
-.bold {
-  font-weight: bold; }
-
 .wrapper {
+  width: 100%;
   display: flex;
-  flex-flow: row wrap;
-  width: 100vw; }
+  flex-flow: row wrap; }
 
 .slide {
-  width: 100%;
-  padding-right: 5px; }
+  height: 300px;
+  width: 200px;
+  max-width: 100%;
+  border: 1px solid pink;
+  margin: 0 5px 5px 0;
+  display: inline-block; }
 
-@media screen and (min-width: 301px) {
-  .slide {
-    width: 50%; } }
-@media screen and (min-width: 601px) {
-  .slide {
-    width: 33.3%; } }
-@media screen and (min-width: 901px) {
-  .slide {
-    width: 25%; } }
-@media screen and (min-width: 1201px) {
-  .slide {
-    width: 20%; } }
-figure {
-  height: 400px;
-  width: 100%;
-  background-color: red;
+figure, figcaption {
+  display: none;
   margin: 0; }
-
-figcaption {
-  text-align: right;
-  padding: 5px 0;
-  height: 50px; }
 
 /*# sourceMappingURL=menu.css.map */
