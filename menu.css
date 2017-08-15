@@ -42,10 +42,18 @@ li:hover {
   max-width: 100%;
   border: 1px solid pink;
   margin: 0 5px 5px 0;
-  display: inline-block; }
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+ }
 
 figure, figcaption {
-  display: none;
+  //display: none;
   margin: 0; }
+
+.big {
+  width: 100%;
+  order: -1; }
 
 /*# sourceMappingURL=menu.css.map */
