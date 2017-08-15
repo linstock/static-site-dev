@@ -52,6 +52,7 @@
       </header-->
 
       <main class="wrapper bar">
+        <!--button type="button" name="button" id="test">test</button-->
 
         <div class="slide">1
           <figure>
@@ -170,6 +171,46 @@
 
       $( document ).ready(function() {
 
+
+
+        $( ".slide" ).click(function() {
+
+          var bigLength = $( ".big" ).length;
+
+          if (bigLength > 0 && $( this ).hasClass( "big")) {
+
+            $( this ).toggleClass( "big");
+
+          }
+
+          else if (bigLength > 0 && !$( this ).hasClass( "big")) {
+
+            console.log( "something else clicked" );
+
+          }
+
+          else {
+
+            $( this ).toggleClass( "big");
+
+          }
+
+        });
+
+        /*$( "#test" ).click(function() {
+
+          var bigLength = $( ".big" ).length;
+
+          console.log( bigLength )
+
+        })**/
+
+      });
+
+
+
+      /*$( document ).ready(function() {
+
         console.log( "jquery ready!" );
 
         $( ".element" ).has( ".hidden" ).click(function() {
@@ -180,7 +221,7 @@
 
             //console.log( content + " was clicked!"
 
-          });
+          });*/
 
 
 
@@ -192,7 +233,6 @@
 
         });*/
 
-      });
 
     </script>
 
