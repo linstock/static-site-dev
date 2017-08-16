@@ -54,7 +54,7 @@
       <main class="wrapper bar">
         <!--button type="button" name="button" id="test">test</button-->
 
-        <div class="slide">1
+        <div class="slide" id="slideone">1
           <figure>
 
           </figure>
@@ -158,7 +158,10 @@
           </figure>
           <figcaption>Some Caption</figcaption>
         </div>
+
       </main>
+
+
 
 
 
@@ -171,43 +174,62 @@
 
       $( document ).ready(function() {
 
-
-
         $( ".slide" ).click(function() {
 
-          var bigLength = $( ".big" ).length;
+            var bigLength = $( ".big" ).length;
 
-          if (bigLength > 0 && $( this ).hasClass( "big")) {
+            if (bigLength > 0 && $( this ).hasClass( "big")) {
 
-            $( this ).toggleClass( "big");
+              $( this ).toggleClass( "big");
 
-          }
+              var p = $( this ).offset().top;
 
-          else if (bigLength > 0 && !$( this ).hasClass( "big")) {
+              console.log( p );
 
-            console.log( "something else clicked" );
+              $( "body" ).scrollTop( p );
 
-          }
+            }
 
-          else {
+            else if (bigLength > 0 && !$( this ).hasClass( "big")) {
 
-            $( this ).toggleClass( "big");
+              console.log( "something else clicked" );
 
-          }
+            }
+
+            else {
+
+              $( this ).toggleClass( "big");
+
+              var p = $( this ).offset().top;
+
+              console.log( p );
+
+              $( "body" ).scrollTop( p );
+
+            }
 
         });
 
-        /*$( "#test" ).click(function() {
 
-          var bigLength = $( ".big" ).length;
 
-          console.log( bigLength )
+        /*function scrollToTopSlide() {
 
-        })**/
+
+
+        };*/
 
       });
 
 
+
+
+      /*$( "#test" ).click(function() {
+
+        var bigLength = $( ".big" ).length;
+
+        console.log( bigLength )
+
+      })**/
 
       /*$( document ).ready(function() {
 
