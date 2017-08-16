@@ -194,6 +194,16 @@
 
               console.log( "something else clicked" );
 
+              $( ".big" ).removeClass( "big" );
+
+              $( this ).toggleClass( "big");
+
+              var p = $( this ).offset().top;
+
+              console.log( p );
+
+              $( "body" ).scrollTop( p );
+
             }
 
             else {
