@@ -7,53 +7,27 @@ html {
 body {
   margin: 0; }
 
-html, h1, li {
-  font-family: 'Archivo Narrow', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5; }
+main {
 
-h1 {
-  font-size: 1.2rem;
-  margin-top: 0; }
-  h1:hover {
-    cursor: pointer; }
+}
 
-li:hover {
-  cursor: pointer; }
+.column {
+  margin: 0 10vw 0 5vw;
+}
 
-.upper {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.post {
 
-.menu {
-  display: none; }
+}
 
-.wrapper {
+.text {
+  max-width: 33rem;
+
+}
+
+.image {
+ width: 100%;
+}
+
+img {
   width: 100%;
-  display: flex;
-  flex-flow: row wrap; }
-
-.slide {
-  height: 300px;
-  width: 200px;
-  max-width: 100%;
-  border: 1px solid pink;
-  margin: 0 5px 5px 0;
-  display: inline-block;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
- }
-
-figure, figcaption {
-  //display: none;
-  margin: 0; }
-
-.big {
-  width: 100%;
-  order: -1; }
-
-/*# sourceMappingURL=menu.css.map */
+}
